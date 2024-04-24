@@ -11,12 +11,12 @@
 - MSci. Physics with Particle Physics and Cosmology, University of Birmingham (2016 - 2020)
 
 ### Work Experience
-- Freelance Data Analyst, TELUS (Aug 2022 - Aug 2022)
-- Research Intern, Particle Physics group, University of Birmingham (Summer 18' and 19')
+- _Freelance Data Analyst, TELUS (Aug 2022 - Aug 2022)_
+- _Research Intern, Particle Physics group, University of Birmingham (Summer 18' and 19')_
 
 
 ### Current Projects 
-•Bayesian Neural Networks for Predicting the Time Evolution of Supermassive Black Hole Binaries• (Ongoing)
+_Bayesian Neural Networks for Predicting the Time Evolution of Supermassive Black Hole Binaries_ (Ongoing)
 
 ### Research Interests
 My astrophysical interests include: N-body simulations, Supermassive black holes and stochastic gravitational wave background. In tandem, I'm very much interested in SciML, and how it can be applied to astrophysics to build interpretable surrogate models from simulations. The current techniques that I'm particularly fond of are: Bayesian Deep Learning, Physics-informed Neural Networks, Neural ODEs and Variational inference.
