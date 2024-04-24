@@ -1,7 +1,7 @@
 # Astrophysics/Machine Learning PhD Researcher
 
 ### Technical Skills
-- Python, SQL
+- Programming Languages: Python, SQL
 - Data Containers: pandas, h5py
 - ML frameworks: scikit-learn, PyTorch, pytorch-lightning, Pyro
 
