@@ -21,6 +21,10 @@
 
 _Bayesian Neural Networks for Predicting the Time Evolution of Supermassive Black Hole Binaries_ (Ongoing)
 
+## Workshops
+
+- International workshop on diffusions in machine learning: foundations, generative models, and optimisation, _participant_
+
 ## Research Interests
 
 My astrophysical interests include: N-body simulations, Supermassive black holes and stochastic gravitational wave background. In tandem, I'm very much interested in SciML, and how it can be applied to astrophysics to build interpretable surrogate models from simulations. The current techniques that I'm particularly fond of are: Bayesian Deep Learning, Physics-informed Neural Networks, Neural ODEs and Variational inference.
