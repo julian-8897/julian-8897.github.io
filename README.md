@@ -27,7 +27,7 @@ Machine Learning for Predicting the Time Evolution of Supermassive Black Hole Bi
 
 ## Research Interests
 
-My astrophysical interests include: N-body simulations, Supermassive black holes and stochastic gravitational wave background. In tandem, I'm very much interested in SciML, and how it can be applied to astrophysics to build interpretable surrogate models from simulations. The current techniques that I'm particularly fond of are: Bayesian Deep Learning, Neural ODEs, Neural Operators, Flow matching and Symbolic Regression.
+I develop surrogate models for predicting the dynamical evolution of binary black holes in N-body simulations of galaxy mergers, using advanced machine learning techniques such as Neural ODEs, Graph Representation Learning, and Symbolic Regression. My current work emphasises the use of pretraining and transfer learning on related spatiotemporal systems to improve both accuracy and computational efficiency.
 
 ## Other Interests
 
