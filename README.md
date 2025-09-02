@@ -1,10 +1,14 @@
 # Astrophysics/Machine Learning PhD Researcher
 
+I'm a PhD student at the **University of Surrey**.  
+I develop machine learning surrogate models to predict the dynamical evolution of astrophysical systems, with a focus on **supermassive binary black holes in galactic mergers**. My work combines **graph neural networks, neural ODEs, and symbolic regression** to build interpretable, scalable models for spatiotemporal systems.
+
 ## Technical Skills
 
-- Programming Languages: Python, Java, SQL
-- Data Containers: pandas, h5py
-- ML frameworks: scikit-learn, PyTorch, pytorch-lightning, Pyro
+- **Programming Languages**: Python, SQL
+- **Machine Learning Frameworks**: PyTorch, PyTorch Lightning, PyTorch Geometric, scikit-learn, Pyro, Hugging Face Transformers
+- **Scientific Computing & Data Handling**: pandas, NumPy, SciPy, h5py, Jupyter  
+- **Workflow & Experimentation**: Git, Bash, Weights & Biases
 
 ## Education
 
@@ -29,14 +33,3 @@ Machine Learning for Predicting the Time Evolution of Supermassive Black Hole Bi
 
 I develop surrogate models for predicting the dynamical evolution of binary black holes in N-body simulations of galaxy mergers, using advanced machine learning techniques such as Neural ODEs, Graph Representation Learning, and Symbolic Regression. My current work emphasises the use of pretraining and transfer learning on related spatiotemporal systems to improve both accuracy and computational efficiency.
 
-## Other Interests
-
-- I've also enjoy experimenting with foundation models on HuggingFace. Recently experimented with RAG using [Cohere API](https://docs.cohere.com/docs/llamaindex) + [LlamaIndex](https://www.llamaindex.ai/) + [LangChain](https://www.langchain.com/).
-- I'm currently trying to pick up Julia so that I can use their [SciML](https://sciml.ai/) ecosystem.
-
-## My Current Setup
-
-- bash + [iTerm2](https://iterm2.com/) + [Starship](https://starship.rs/)
-- [VS Code](https://code.visualstudio.com/) + [essential Python extensions](https://code.visualstudio.com/docs/languages/python#_install-python-and-the-python-extension) for Python/ML projects
-- Jupyter notebooks for experimenting in Python/Julia
-- [Cookiecutter](https://github.com/cookiecutter/cookiecutter) for generating project templates
