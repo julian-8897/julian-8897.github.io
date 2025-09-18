@@ -28,8 +28,3 @@ Machine Learning for Predicting the Time Evolution of Supermassive Black Hole Bi
 ## Workshops
 
 - International workshop on diffusions in machine learning: foundations, generative models, and optimisation, _participant_
-
-## Research Interests
-
-I develop surrogate models for predicting the dynamical evolution of binary black holes in N-body simulations of galaxy mergers, using advanced machine learning techniques such as Neural ODEs, Graph Representation Learning, and Symbolic Regression. My current work emphasises the use of pretraining and transfer learning on related spatiotemporal systems to improve both accuracy and computational efficiency.
-
