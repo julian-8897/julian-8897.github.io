@@ -1,5 +1,33 @@
-title: Julian Chan
-logo: /assets/img/headshot_circular.png
-#description: text below image
-show_downloads: false
+# Site Settings
+title: Julian
+description: PhD Researcher in Machine Learning & Astrophysics
+url: "https://julian-8897.github.io"
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Kramdown Settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Theme
 theme: jekyll-theme-minimal
+
+# Exclude
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Optional: Social links
+github_username: julian-8897
+linkedin_username: julian-chan-a86b2921b
