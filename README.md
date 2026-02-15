@@ -1,30 +1,34 @@
-# Astrophysics/Machine Learning PhD Researcher
+# Selected Projects
 
-I'm a PhD student at the **University of Surrey**.  
-I develop machine learning surrogate models to predict the dynamical evolution of astrophysical systems, with a focus on **supermassive binary black holes in galactic mergers**. My work combines **graph neural networks, neural ODEs, and symbolic regression** to build interpretable, scalable models for spatiotemporal systems.
+## Inverse Burgers Equation Solver with Cross-Framework PINNs
 
-## Technical Skills
+**Technologies:** JAX, PyTorch, Tesseract, Equinox, Docker, Streamlit
 
-- **Programming Languages**: Python, SQL
-- **Machine Learning Frameworks**: PyTorch, PyTorch Lightning, PyTorch Geometric, scikit-learn, Pyro, Hugging Face Transformers
-- **Scientific Computing & Data Handling**: pandas, NumPy, SciPy, h5py, Jupyter  
-- **Workflow & Experimentation**: Git, Bash, Weights & Biases
+**🏆 Honorable Mention - [Tesseract Hackathon 2025](https://pasteurlabs.ai/insights/tesseract-hackathon-winners)** (Pasteur Labs & ISI)
 
-## Education
+### Overview
 
-- PhD Astrophysics, University of Surrey (Sept 2023 - Current)
-- MSc. Computer Science, Swansea University (2021 - 2022)
-- MSci. Physics with Particle Physics and Cosmology, University of Birmingham (2016 - 2020)
+Developed a backend-agnostic physics-informed neural network (PINN) system for solving inverse problems in fluid dynamics. The project demonstrates pipeline-level automatic differentiation across deep learning frameworks, enabling JAX optimizers to compute gradients through PyTorch models via the Tesseract framework.
 
-## Work Experience
+### Problem & Approach
 
-- _Freelance Data Analyst, TELUS (Aug 2022 - Aug 2022)_
-- _Research Intern, Particle Physics group, University of Birmingham (Summer 18' and 19')_
+- Implemented an inverse solver for the 1D viscous Burgers equation to infer unknown viscosity parameters from noisy observational data
+- Designed a PINN architecture with Fourier feature encoding to mitigate spectral bias, processing spatial-temporal inputs through a 130→64→64→64→1 MLP
+- Minimized a composite loss function incorporating data fidelity, PDE residuals, initial conditions, and boundary conditions
 
-## Current Projects
+### Technical Implementation
 
-Machine Learning for Predicting the Time Evolution of Supermassive Black Hole Binaries_ (Ongoing)
+- Built dual backend implementations (JAX/Equinox and PyTorch) with identical optimization pipelines, packaged as Docker containers
+- Implemented Tesseract's differentiable programming interface (`apply`, `vector_jacobian_product`, `jacobian_vector_product`) for both backends to enable cross-framework gradient computation
+- Leveraged native automatic differentiation (`jax.grad`, `torch.autograd.grad`) for computing solution derivatives (∂u/∂x, ∂u/∂t, ∂²u/∂x²)
+- Created an interactive Streamlit application with real-time training visualization, hyperparameter tuning, and gradient flow inspection
 
-## Workshops
+### Results
 
-- International workshop on diffusions in machine learning: foundations, generative models, and optimisation, _participant_
+- Achieved accurate viscosity inference (ν = 0.05) with both backends converging after 100 epochs
+- Demonstrated framework-agnostic scientific ML pipeline where backend selection only affects internal autograd implementation, not system-level code
+- Validated approach on synthetic data with realistic noise levels (σ = 0.02)
+- Recognized as one of three honorable mentions among submissions from Johns Hopkins University, industry researchers, and international teams
+
+**Repository:** [github.com/julian-8897/tesseract-pinn-inverse-burgers](https://github.com/julian-8897/tesseract-pinn-inverse-burgers)
+
