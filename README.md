@@ -1,5 +1,39 @@
 # Selected Projects
 
+## Continuous-Time Modelling of Black Hole Binary Evolution with Neural ODEs
+
+**Technologies:** PyTorch, Neural ODEs, torchdiffeq, AdamW, Curriculum Learning
+
+**📄 Published:** [Monthly Notices of the Royal Astronomical Society (MNRAS)](https://doi.org/10.1093/mnras/stag135) | [arXiv:2601.13019](https://arxiv.org/abs/2601.13019)
+
+### Overview
+
+Developed parameterised neural ordinary differential equations (PNODEs) as surrogate models for supermassive black hole binary dynamics in galaxy mergers. The approach provides continuous-time predictions of orbital evolution across a two-dimensional parameter space, achieving significant computational speedup (weeks to seconds) while maintaining median prediction errors around 1% on held-out test data.
+
+### Problem & Approach
+
+- Trained parameter-conditioned neural ODEs to learn the dynamical system governing coupled evolution of orbital energy and angular momentum from 156 N-body simulations
+- Addressed challenges in learning smooth trajectories from data with inherent stochastic noise due to gravitational three-body interactions
+- Built surrogate models to enable efficient parameter space exploration for astrophysics applications where direct simulation is computationally prohibitive
+
+### Technical Implementation
+
+- Designed parameter-conditioned neural ODE architecture that takes simulation parameters as inputs alongside state variables, enabling a single model to generalize across continuous parameter space
+- Implemented two-stage curriculum learning: initial per-trajectory training followed by joint ensemble training to capture parameter-dependent dynamics
+- Engineered weighted Huber loss function with differential weighting (5× on angular momentum) to improve coupled variable predictions through implicit dependencies
+- Integrated adaptive ODE solver (Dormand-Prince) for numerically stable long-horizon trajectory integration
+- Applied domain-informed preprocessing: log-transformation for scale invariance, input normalization, and careful handling of phase transitions in the dynamics
+
+### Results
+
+- Achieved median fractional errors ~1% on both target variables across 24 held-out test trajectories within the training parameter distribution
+- Demonstrated interpolation capability across the two-dimensional parameter space with a single unified model
+- Observed some extrapolation to higher-resolution simulations beyond the training distribution, though with increased uncertainty
+- Validated that predictions maintain physical consistency through downstream calculations of derived quantities (orbital elements, timescales)
+- Reduced inference cost by multiple orders of magnitude compared to full simulation while capturing key dynamical trends
+
+---------
+
 ## Inverse Burgers Equation Solver with Cross-Framework PINNs
 
 **Technologies:** JAX, PyTorch, Tesseract, Equinox, Docker, Streamlit
