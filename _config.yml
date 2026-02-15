@@ -1,5 +1,5 @@
 # Site Settings
-title: Julian
+title: Julian Chan
 description: PhD Researcher in Machine Learning & Astrophysics
 url: "https://julian-8897.github.io"
 baseurl: ""
@@ -20,7 +20,7 @@ plugins:
   - jekyll-seo-tag
 
 # Theme
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 
 # Exclude
 exclude:
